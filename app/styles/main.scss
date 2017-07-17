@@ -1,0 +1,534 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+$banner-text-color: #333;
+$highlight-color: #dccd07;
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+.navbar-brand{
+  margin-left: 10em !important; 
+}
+
+.section-heading{
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  font-variant: small-caps;
+}
+  
+}
+/*------------------Header starts ----------------------------------------------------------------*/
+header{
+  position: fixed;
+  width: 100vw;
+  background-color: #f5f5f5;    
+  max-height: 15vh;
+  visibility: hidden;
+  z-index: 100;
+
+  h2{
+    font-size: 20px;
+    line-height: 12px;
+    color: $banner-text-color;
+    margin-top: 0px;
+  }
+
+}
+.navbar-collapse{
+    overflow: hidden !important;
+  }
+.active, .active a{
+  background-color: transparent !important;
+  text-decoration: line-through;
+}
+/*------------------Header Ends ----------------------------------------------------------------*/
+
+/* CSS FOR HOME SLIDE */
+.parallax-window,{
+ min-height: 100vh;
+background: transparent; 
+}
+ .parallax-window-2{
+   min-height: 40vh;
+  background: transparent; 
+ }
+ .parallax-window-3{
+   min-height: 70vh;
+  background: transparent; 
+ }
+
+.banner-text{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;    
+    display: table-cell;
+  
+
+    h1{
+        font-size: 5em;
+        font-variant: small-caps;
+        text-transform: capitalize;
+    }
+
+    h5{
+      font-size: 1.6em;
+    }
+    
+}
+
+.banner-text h5,.banner-text h1{
+     color: #333333;
+    font-weight: bolder;
+}
+.banner-text p {
+  font-size: 2em;
+  strong{
+    font-style: italic;
+  }  
+}
+.social-link{ 
+  
+  a{
+       border: 2px solid #333;
+       border-radius: 50%;
+      padding: 6px;
+      width: 35px;
+      display: inline-block;
+  }
+  a:hover, a:hover i{
+    background-color: $banner-text-color;
+    color: #fff;
+  }
+  i{
+      color: $banner-text-color;
+  }
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  //font-family: 'Righteous', cursive;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/*   ------------------------------- CSS FOR ABOUT ----------------------------------- */
+
+#introduction{
+  margin-top: 2em;
+  line-height: 1.7em;  
+  
+}
+
+.profile-pic{
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+}
+.small{
+   width: 7em;
+  height: 7em;
+}
+
+.profile-info{
+  list-style: none;
+  padding: 0;
+
+
+  li{
+    margin-top: 2em;
+    display: inline-flex;
+    margin-right: 3.1em;
+    //max-width: 10em;
+     -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+    animation-timing-function: linear;
+  }
+  
+}
+.key{ font-weight: bolder;  font-size: 15px;  }
+.value{   font-weight: 100; font-size: 13px; font-variant: normal }
+.profile-header{ font-variant: small-caps; font-weight: bold; }
+.skills li{
+  display: block;
+
+  strong{
+    color: $highlight-color;
+  }
+}
+.skills svg{
+  background-color: #efefef;
+}
+
+
+/* --------------ABOUT ENDS ------------------------------------------------------------*/
+/* --------------MID BANNER STARTS -----------------------------------------------------*/
+
+#mid-banner{
+
+
+  h2{
+    margin-top: 20vmin;    
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 25px;
+    color: $highlight-color;
+  }
+
+}
+
+/* --------------MID BANNER Ends -----------------------------------------------------*/
+/*-----------------------TIME LINE STARTS --------------------------------------------*/
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 50%;
+        margin-left: -1.5px;
+    }
+
+    .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li > .timeline-panel {
+            width: 46%;
+            float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 2px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+
+            .timeline > li > .timeline-panel:before {
+                position: absolute;
+                top: 26px;
+                right: -15px;
+                display: inline-block;
+                border-top: 15px solid transparent;
+                border-left: 15px solid #ccc;
+                border-right: 0 solid #ccc;
+                border-bottom: 15px solid transparent;
+                content: " ";
+            }
+
+            .timeline > li > .timeline-panel:after {
+                position: absolute;
+                top: 27px;
+                right: -14px;
+                display: inline-block;
+                border-top: 14px solid transparent;
+                border-left: 14px solid #fff;
+                border-right: 0 solid #fff;
+                border-bottom: 14px solid transparent;
+                content: " ";
+            }
+
+        .timeline > li > .timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+
+@media (max-width: 767px) {
+  #introduction, #history{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}
+/*--------------------------TIMELINE ENDS---------------------------------------------*/
+
+/*---------------------------------Testimonial Starts---------------------------------*/
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+.my-card{
+  max-width: 50em; display: inline-block; border-top: 7px solid $highlight-color;
+  margin-top: 5em;
+}
+/*---------------------------------Testimonials Ends---------------------------------*/
+/*---------------------------------FOOTER STARTS--------------------------------------*/
+footer{
+  min-width: 100vw;
+  min-height: 90px;
+  max-height: 14vh;
+  background-color: #dccd07;
+  text-align: center;
+
+  .social-link a{
+    margin-right: 10vmin;
+    margin-top: 25px;
+  }
+
+}
+
+/*---------------------------------FOOTER ENDS----------------------------------------*/
+@media only screen and (max-width: 767px) {
+.parallax-mirror img{
+  margin-left: -3em;
+}
+.banner-text{
+  padding-left: 5em;   
+    h1{
+        font-size: 2.5em;            
+    }
+
+    h5{
+      font-size: 1.5em;
+    }
+    
+  }
+ .banner-text p {
+  font-size: 1.4em; 
+}
+}

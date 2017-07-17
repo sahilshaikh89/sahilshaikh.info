@@ -1,0 +1,16 @@
+@media only screen and (max-width: 767px) {
+  h1{
+    color:red;
+  }
+.banner-text{   
+    h1{
+        font-size: 2em;       
+        color: red; 
+    }
+
+    h5{
+      font-size: 1.6em;
+    }
+    
+  }
+}
